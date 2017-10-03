@@ -1,0 +1,194 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+    </script>
+</head>
+<body>
+<h1 class="text-center"><%=group.groupName %></h1>
+<h4 class="text-center">Even</h4>
+<table class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th class="text-center">Понедельник</th>
+        <th class="text-center">Вторник</th>
+        <th class="text-center">Среда</th>
+        <th class="text-center">Четверг</th>
+        <th class="text-center">Пятница</th>
+        <th class="text-center">Суббота</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td class="text-center" class="tooltip" title="Преподаватель: <%=group.evenWeek.week.monday.lessons.first.teacher%>
+         Аудитория: <%=group.evenWeek.week.monday.lessons.first.auditory%>"><%=group.evenWeek.week.monday.lessons.first.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.tuesday.lessons.first.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.wednesday.lessons.first.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.thursday.lessons.first.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.friday.lessons.first.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.saturday.lessons.first.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td class="text-center"><%=group.evenWeek.week.monday.lessons.second.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.tuesday.lessons.second.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.wednesday.lessons.second.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.thursday.lessons.second.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.friday.lessons.second.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.saturday.lessons.second.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td class="text-center"><%=group.evenWeek.week.monday.lessons.third.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.tuesday.lessons.third.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.wednesday.lessons.third.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.thursday.lessons.third.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.friday.lessons.third.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.saturday.lessons.third.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td class="text-center"><%=group.evenWeek.week.monday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.tuesday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.wednesday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.thursday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.friday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.saturday.lessons.fourth.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td class="text-center"><%=group.evenWeek.week.monday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.tuesday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.wednesday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.thursday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.friday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.saturday.lessons.first.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td class="text-center"><%=group.evenWeek.week.monday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.tuesday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.wednesday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.thursday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.friday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.saturday.lessons.sixth.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td class="text-center"><%=group.evenWeek.week.monday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.tuesday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.wednesday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.thursday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.friday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.saturday.lessons.seventh.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td class="text-center"><%=group.evenWeek.week.monday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.tuesday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.wednesday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.thursday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.friday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.evenWeek.week.saturday.lessons.eights.name%></td>
+    </tr>
+    </tbody>
+</table>
+
+<h4 class="text-center">Odd</h4>
+<table class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th class="text-center">Понедельник</th>
+        <th class="text-center">Вторник</th>
+        <th class="text-center">Среда</th>
+        <th class="text-center">Четверг</th>
+        <th class="text-center">Пятница</th>
+        <th class="text-center">Суббота</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td class="text-center"><%=group.oddWeek.week.monday.lessons.first.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.tuesday.lessons.first.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.wednesday.lessons.first.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.thursday.lessons.first.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.friday.lessons.first.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.saturday.lessons.first.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td class="text-center"><%=group.oddWeek.week.monday.lessons.second.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.tuesday.lessons.second.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.wednesday.lessons.second.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.thursday.lessons.second.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.friday.lessons.second.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.saturday.lessons.second.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td class="text-center"><%=group.oddWeek.week.monday.lessons.third.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.tuesday.lessons.third.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.wednesday.lessons.third.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.thursday.lessons.third.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.friday.lessons.third.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.saturday.lessons.third.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td class="text-center"><%=group.oddWeek.week.monday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.tuesday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.wednesday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.thursday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.friday.lessons.fourth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.saturday.lessons.fourth.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td class="text-center"><%=group.oddWeek.week.monday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.tuesday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.wednesday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.thursday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.friday.lessons.fifth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.saturday.lessons.first.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td class="text-center"><%=group.oddWeek.week.monday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.tuesday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.wednesday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.thursday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.friday.lessons.sixth.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.saturday.lessons.sixth.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td class="text-center"><%=group.oddWeek.week.monday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.tuesday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.wednesday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.thursday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.friday.lessons.seventh.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.saturday.lessons.seventh.name%></td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td class="text-center"><%=group.oddWeek.week.monday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.tuesday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.wednesday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.thursday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.friday.lessons.eights.name%></td>
+        <td class="text-center"><%=group.oddWeek.week.saturday.lessons.eights.name%></td>
+    </tr>
+    </tbody>
+</table>
+</body>
